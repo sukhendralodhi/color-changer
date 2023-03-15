@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="flex flex-col justify-center items-center h-screen">
+        <h1 class="text-lg text-center px-4 sm:px-0 sm:text-2xl ">Type which color do you want!</h1>
+      <div class="flex flex-col sm:flex-row mt-4">
+        <input id="input-field" class="px-2 border border-red-400 rounded outline-none" type="text" placeholder="Input color..." autocomplete="off" onkeypress="enter(event)"/>
+        <button id="btn" class="px-2 border border-red-400 rounded hover:bg-red-400 hover:text-white mt-4 sm:mt-0 sm:ml-2">Apply</button>
+      </div>
+      <div id="result" class="mt-8 text-white font-bold"></div>
+    </section>
+
+    <!-- JavaScript  -->
+    <script src="app.js"></script>
+  </body>
+</html>
