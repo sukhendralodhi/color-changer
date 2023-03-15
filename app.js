@@ -14,10 +14,10 @@ const changeColor = () => {
     if(inputEle.value === "") {
         resEle.innerText = "Please input color!";
         resEle.style.color = 'red';
-        document.body.style.backgroundColor = "";
+        document.getElementById('section').style.backgroundColor = "";
     } else {
         const colorVal = inputEle.value;
-        document.body.style.backgroundColor = colorVal.toLowerCase();
+        document.getElementById('section').style.backgroundColor = colorVal.toLowerCase();
         resEle.innerText = `Color: ${colorVal}`;
         resEle.style.color = 'white';
     }

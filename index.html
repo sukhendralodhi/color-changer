@@ -4,11 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Country Information</title>
+    <title>Color changer</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <section class="flex flex-col justify-center items-center h-screen">
+    <div>
+        <header>
+          
+          <nav class="flex justify-between h-16 items-center px-4 md:px-8">
+          <h1 class="text-2xl"><span class="text-red-600">C</span>olor<span class="text-red-600">C</span>hanger</h1>
+  
+         <div class="hidden lg:block">
+           <input type="text" placeholder="Type...." class="border border-red-400 rounded px-2 py-0.5 outline-none" />
+           <button class="border border-red-400 px-2 py-0.5 ml-2 hover:bg-red-400 text-black rounded">Search</button>
+         </div>
+  
+          <div class="sm:hidden">
+              <img  class="w-11 hover:w-12" src="https://cdn3.iconfinder.com/data/icons/aami-web-internet/64/aami8-82-256.png" alt="" />
+          </div>
+  
+              <ul class="sm:flex hidden sm:block">
+                  <li class="w-20"><a href="#">Home</a></li>            
+                  <li class="w-20"><a href="#">Profile</a></li>            
+                  <li class="w-20"><a href="#">Contact</a></li>            
+                  <li class="w-20"><a href="#">About</a></li>            
+              </ul>
+          </nav>
+          <hr class="bg-red-400" />
+        </header>
+      </div>
+
+    <section id="section" class="flex flex-col justify-center items-center mt-16">
         <h1 class="text-lg text-center px-4 sm:px-0 sm:text-2xl ">Type which color do you want!</h1>
       <div class="flex flex-col sm:flex-row mt-4">
         <input id="input-field" class="px-2 border border-red-400 rounded outline-none" type="text" placeholder="Input color..." autocomplete="off" onkeypress="enter(event)"/>
